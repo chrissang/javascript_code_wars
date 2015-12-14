@@ -88,7 +88,20 @@
 // arpeggio("A");
 
 
+//SORT AGES IN ACENDING ORDER USING ES6 Arrow Functions
+// var people = [
+//   { age: 46, name: 'roger' },
+//   { age: 99, name: 'vinny' },
+//   { age: 26, name: 'don' },
+//   { age: 74, name: 'brendan'}
+// ]
 
+// var OrderPeople = function(people){
+// 	console.log(JSON.stringify(people));
+// 	console.log(JSON.stringify(people.sort( (a,b) => a.age-b.age)));
+// 	return people.sort((a,b) => a.age-b.age);
+// }
+// OrderPeople(people);
 
 
 
