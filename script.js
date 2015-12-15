@@ -172,8 +172,21 @@
 // order("4of Fo1r pe6ople g3ood th5e the2");
 
 
+// Given a string, replace every letter with its position in the alphabet.
+// function alphabetPosition(text) {
+// 	var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+// 	var output = [];
+//   	alphabet = alphabet.split('');
+//   	text = text.replace(/[!@#$%^&*' ]/g, "").replace(/[^a-zA-Z ]/ig, "").toLowerCase().split('');
 
+// 	for (var i = 0; i < text.length; i++) {
+// 		output.push(alphabet.indexOf(text[i])+1);
+// 	}
+// 	console.log(output.toString().replace(/,/g , " "));
+// 	return output.toString().replace(/,/g , " ")
+// }
 
+// alphabetPosition("/The sunset sets at twelve o' clock.");
 
 
 
