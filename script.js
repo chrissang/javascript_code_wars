@@ -30,6 +30,7 @@
 // }
 //checkCoupon('123','123a','September 5, 2014','October 1, 2014');
 
+
 // FIND PRODUCT OF DIAGONAL NUMBERS
 // var backwards = [];
 // function reverse(str) {
@@ -102,6 +103,75 @@
 // 	return people.sort((a,b) => a.age-b.age);
 // }
 // OrderPeople(people);
+
+
+//CALCULATE TYPE OF TRIANGLE GIVEN SIDES A,B,C
+// var triangles = {
+// 	none: 0,
+// 	acute: 1,
+// 	right: 2,
+// 	obtuse: 3
+// }
+
+// function triangleType(a, b, c){
+// 	var angleA = ((b*b)+(c*c)-(a*a))/(2*b*c);
+// 	angleA = Math.acos(angleA) * 180/Math.PI;
+// 	angleA = Math.round(angleA);
+// 	console.log(angleA);
+
+// 	var angleB = ((c*c)+(a*a)-(b*b))/(2*a*c);
+// 	angleB = Math.acos(angleB) * 180/Math.PI;
+// 	angleB = Math.round(angleB);
+// 	console.log(angleB);
+// 	var angleC = 180 - angleA - angleB;
+
+// 	angleC = Math.round(angleC);
+// 	console.log(angleC);
+
+// 	var total = angleA + angleB + angleC;
+// 	console.log(total);
+
+// 	if (angleA < 90 && angleB < 90 && angleC < 90) {
+// 		console.log(triangles.acute);
+// 		return triangles.acute;
+// 	} else if (angleA == 90 && total < 181 || angleB == 90 && total < 181 || angleC == 90 && total < 181) {
+// 		console.log(triangles.right);
+// 		return triangles.right;
+// 	} else if (angleA > 90 && angleA < 180 && total < 181 || angleB > 90 && angleB < 180 && total < 181 || angleC > 90 && angleC < 180 && total < 181) {
+// 		console.log(triangles.obtuse);
+// 		return triangles.obtuse;
+// 	} else {
+// 		console.log(triangles.none);
+// 		return triangles.none;
+// 	}
+// }
+
+// triangleType(1,2,3);
+
+
+// Each word in the String will contain a single number. This number is the position the word should have in the result.
+// function order(words){
+// 	var reordered = [];
+// 	words = words.split(' ');
+
+// 	if (words == '' || null) {
+// 		console.log('empty sting');
+// 		return ''
+// 	} else {
+
+// 		for (var i = 0; i < words.length; i++) {
+// 			var index = words[i].match(/[0-9]/gi);
+// 			index = index[0]-1;
+// 			reordered[index] = words[i];
+// 		}
+// 		console.log(reordered.toString().replace(/,/g , " "));
+// 		return reordered.toString().replace(/,/g , " ")
+// 	}
+// };
+
+// order("4of Fo1r pe6ople g3ood th5e the2");
+
+
 
 
 
